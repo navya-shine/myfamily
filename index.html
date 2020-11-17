@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Family Book
+        </title>
+    </head>
+    <body style="text-align: center;">
+        <h1 style="font-weight:1000;font-weight:bold;font-size:30px;" >
+            My Family Book
+        </h1>
+        <img id="album" src="download.jpeg" style="height: 80%;width: 50%;"><br>
+        <button type="button" onclick="nextpearson()"> 
+            Next 
+         </button>
+    </body>
+    <script>
+       Array var images = [
+  "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alamy.com%2Fstock-photo%2Fcartoon-parents-daughter-family.html&psig=AOvVaw1vgwDW2ZV26S4D4diob1ns&ust=1605679407523000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCS4oj0iO0CFQAAAAAdAAAAABAD",
+  "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F653444227175259829%2F&psig=AOvVaw136ZdihISadqxrUxJsxL6_&ust=1605679487435000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiSvLP0iO0CFQAAAAAdAAAAABAD",
+  "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2F55%2Fbb%2F3455bb46b481c58d0288b8469694550c.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F553731716679424108%2F&tbnid=uQIbd5D5N8AETM&vet=12ahUKEwjlycHQ9IjtAhXIELcAHeXHAOIQMygKegUIARDEAQ..i&docid=7tkR7xz7yYgrRM&w=350&h=450&q=sister%20from%20family%20book%20animated&hl=en-GB&ved=2ahUKEwjlycHQ9IjtAhXIELcAHeXHAOIQMygKegUIARDEAQ",
+  "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F51wZfvZev-L._SX258_BO1%2C204%2C203%2C200_.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.in%2FWe-Are-Family-Patricia-Hegarty%2Fdp%2F1680100548&tbnid=PZVR6giBr6jKVM&vet=12ahUKEwiz15OzlIntAhWJn0sFHaa7DdoQMygEegUIARDUAQ..i&docid=MQx9KGIqzOrj5M&w=260&h=243&q=family%20book&ved=2ahUKEwiz15OzlIntAhWJn0sFHaa7DdoQMygEegUIARDUAQ"
+
+var i = 0;
+function nextpearson() { 
+ 
+   if(i == 4)
+     {
+       i=0;
+     }
+   
+    document.getElementById("album").src = images[i];
+  i++;
+
+}
+    </script>
+</html>
